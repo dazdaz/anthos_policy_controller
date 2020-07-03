@@ -1,4 +1,4 @@
-### Prep
+### Prep - Install Anthos Policy Controller through Anthos Config Management
 ```
 cat << EOF > policy_controller.yaml
 # policy_controller.yaml
