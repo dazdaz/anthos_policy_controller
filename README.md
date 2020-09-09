@@ -23,6 +23,8 @@ EOF
 kubectl apply -f policy_controller.yaml
 # Can take a good 5 minutes for GateKeeper to properly start
 kubectl get pods -n gatekeeper-system
+# Check logs for any issues
+kubectl logs -n gatekeeper-system gatekeeper-controller-manager-0
 wait 5
 kubectl get constrainttemplates
 kubectl describe constrainttemplate k8spspvolumetypes
